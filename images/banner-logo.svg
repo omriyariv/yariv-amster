@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="171px" height="73px" viewBox="0 0 171 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Logo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.3%" y="-3.4%" width="102.6%" height="106.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.347956731 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-426.000000, -127.000000)">
+            <g id="Main" transform="translate(-126.000000, 0.000000)">
+                <g id="Logo-Copy" filter="url(#filter-1)" transform="translate(541.000000, 127.000000)">
+                    <text id="יריב-אמסטר-copy" font-family="OEDooPro-Bold, OE Doo Pro" font-size="34" font-weight="bold" line-spacing="31" letter-spacing="-0.443478261" fill="#F7F7F7">
+                        <tspan x="3.4053913" y="71.8497925">יריב-אמסטר</tspan>
+                    </text>
+                    <path d="M114.620232,13.2244191 L116,15.4547503 L100.841349,43 L99.7521019,41.5866693 L111.159326,16.278057 L104.378946,6.94055717 L93.9698671,13.0930664 L90,9.42397428 L106.501689,1 L109.643872,5.18036495 L111.738909,8.56689506 L122.105527,7 L127,24.214228 L104,39 L106.058793,35.2173295 L122.105527,23 L119.565025,12.1557765 L114.620232,13.2244191 Z M83.268244,8.92029294 L89.163567,0 L95.7053867,4.02862549 L91.8603623,6.26077271 L89.6050161,5.08630371 L84.2102414,15.3786306 L97,40.9719682 L96.3536627,43 L79,15.3786306 L80.6953407,12.8133878 L76.2645011,11.6182504 L72.5810813,22.9881076 L90.3439597,35.5492188 L92,38 L69,24.2014331 L73.8166943,7 L83.268244,8.92029294 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
