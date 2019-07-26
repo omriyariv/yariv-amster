@@ -5,8 +5,7 @@
 @import 'libs/breakpoints';
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,500&display=swap&subset=hebrew');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
-@import url('http://preview.uideck.com/items/unfold/assets/fonts/LineIcons.ttf?y2l643');
-
+// @import url('http://preview.uideck.com/items/unfold/assets/fonts/LineIcons.ttf?y2l643');
 
 
 /*
@@ -204,9 +203,9 @@
 				top: 0;
 			}
 
-			@include breakpoint('<=small') {
-				margin: 0 0 _size(element-margin) 0;
-			}
+			// @include breakpoint('<=small') {
+			// 	margin: 0 0 _size(element-margin) 0;
+			// }
 		}
 
 		@include breakpoint('<=medium') {
@@ -346,6 +345,10 @@
 	.wrapper {
 		padding: 3em 0;
 
+		@include breakpoint('<=small') {
+			padding: 2em 0;
+		}
+
 		> .inner {
 			max-width: 58em;
 			margin: 0 auto;
@@ -419,6 +422,10 @@
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+
+		@include breakpoint('<=small') {
+			display: none;
+		}
 
 		.logo {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
@@ -503,6 +510,7 @@
 		text-align: center;
 
 		.inner {
+			height: 15em;
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'column');
 			@include vendor('justify-content', 'center');
@@ -553,7 +561,7 @@
 
 		.more {
 			@include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
-			@include vendor('transition-delay', '2.5s');
+			@include vendor('transition-delay', '2s');
 			@include vendor('transform', 'translateY(0)');
 			border: none;
 			bottom: 0;
@@ -591,7 +599,7 @@
 		&:after {
 			@include vendor('pointer-events', 'none');
 			@include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
-			@include vendor('transition-delay', '1.25s');
+			@include vendor('transition-delay', '0.5s');
 			content: '';
 			background: #2e3842;
 			display: block;
@@ -604,7 +612,7 @@
 		}
 
 		@include breakpoint('<=small') {
-			@include padding(7em, 3em);
+			@include padding(10em, 3em);
 			height: auto;
 			min-height: 0;
 
@@ -701,6 +709,12 @@
 					padding: 1.8em 1.3em 1.3em 1.3em;
 					margin: 0.4em;
 				}
+
+				@include breakpoint('<=small') {
+					padding: 1em;
+					margin: 0.2em;
+					width: 45%;
+				}
 	
 				@include icon-before('divorce');
 				@include icon-before('custody');
@@ -745,6 +759,13 @@
 		.underline {
 			border-bottom: dashed 1px white;
 		}
+
+		@include breakpoint('<=small') {
+			padding: 2em 2em 3em 2em;
+			p {
+				font-size: 1.5em;
+			}
+		}
 	}
 
 	#three {
@@ -755,6 +776,11 @@
 			@include vendor('display', 'flex');
 			margin: 0 0 4em 0;
 			padding: 0 1em;
+
+			@include breakpoint('<=small') {
+				@include vendor('flex-direction', 'column');
+				margin-bottom: 3em;
+			}
 
 			@include breakpoint('<=medium') {
 				font-size: 10.5pt;
@@ -770,6 +796,11 @@
 				@include breakpoint('<=medium') {
 					padding-right: 1.5em;
 				}
+
+				@include breakpoint('<=small') {
+					padding: 0 0 1em 0;
+					width: 100%;
+				}
 	
 				img {
 					border-radius: 8px;
@@ -782,6 +813,10 @@
 				@include vendor('order', '2');
 				max-width: 52em;
 				width: 55%;
+
+				@include breakpoint('<=small') {
+					width: 100%;
+				}
 			}
 	
 			h2 {
@@ -794,6 +829,11 @@
 				@include breakpoint('<=medium') {
 					font-size: 2.15em;
 					line-height: 2em;
+				}
+
+				@include breakpoint('<=small') {
+					font-size: 2em;
+					width: 100%;
 				}
 	
 				&:before {
@@ -814,20 +854,27 @@
 					font-size: 1.15em;
 				}
 			}
-	
-			&:nth-child(1) {
-				@include vendor('flex-direction', 'row-reverse');
-			}
-	
-			&:nth-child(2) {
-				.image {
-					padding: 0 0 0 3.5em;
 
-					@include breakpoint('<=medium') {
-						padding-left: 1.5em;
+			@include breakpoint('>small') {
+				// font-size: 2em;
+				width: 100%;
+
+				&:nth-child(1) {
+					@include vendor('flex-direction', 'row-reverse');
+				}
+		
+				&:nth-child(2) {
+					.image {
+						padding: 0 0 0 3.5em;
+	
+						@include breakpoint('<=medium') {
+							padding-left: 1.5em;
+						}
 					}
 				}
 			}
+	
+
 		}
 	}
 
@@ -837,9 +884,13 @@
 		.inner {
 			@include vendor('align-items', 'flex-start');
 			@include vendor('display', 'flex');
+
+			@include breakpoint('<=small') {
+				@include vendor('flex-direction', 'column');
+			}
 			
 			.contact {
-				width: 45%;
+				width: 50%;
 
 				h2 {
 					color: #FFFFFF;
@@ -857,13 +908,40 @@
 					}
 				}
 
+				@include breakpoint('<=small') {
+					width: 100%;
+					text-align: center;
+					h2 {
+						font-size: 2.1em;
+						margin-bottom: 0.5em;
+						&:before {
+							display: none;
+						}
+						display: inline-block;
+						line-height: 0.6em;
+						&:after {
+							content: '';
+							background: _palette(fg);
+							display: inline-block;
+							width: 50%;
+							height: 3px;
+						}
+					}
+				}
+
 				.items {
 					margin-left: 2em;
-					font-size: 1.25em;
+					font-size: 1.15em;
 					text-align: left;
 
+					@include breakpoint('<=small') {
+						text-align: right;
+						margin-left: 0;
+						margin-right: 1em;
+					}
+
 					div {
-						margin-bottom: 1em;
+						margin-bottom: 0.8em;
 
 						@include icon-after('address');
 						@include icon-after('email');
@@ -876,10 +954,34 @@
 							color: #ffffff;
 							top: 0.5em;
 							margin-right: 0.5em;
-							height: 1.5em;
-							width: 1.5em;
+							height: 1.75em;
+							width: 1.7em;
 							background-position: center;
 							background-repeat: no-repeat;
+						}
+
+						@include breakpoint('<=small') {
+							margin-bottom: 0.6em;
+							@include icon-before('address');
+							@include icon-before('email');
+							@include icon-before('phone');
+
+							&:after {
+								display: none;
+							}
+
+							&:before {
+								content: '';
+								position: relative;
+								display: inline-block;
+								color: #ffffff;
+								top: 0.5em;
+								margin-left: 0.5em;
+								height: 1.75em;
+								width: 1.7em;
+								background-position: center;
+								background-repeat: no-repeat;
+							}
 						}
 					}
 				}
@@ -890,6 +992,11 @@
 
 				iframe {
 					width: 100%;
+				}
+
+				@include breakpoint('<=small') {
+					width: 100%;
+					padding: 1em;
 				}
 			}
 		}
@@ -992,7 +1099,7 @@
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-small.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1013,7 +1120,7 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-small.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
