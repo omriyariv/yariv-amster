@@ -1099,9 +1099,9 @@
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-small.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-new-small.jpg")'));
 			background-attachment: fixed;
-			background-position: center center;
+			background-position: center 10%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			padding-top: 0;
@@ -1120,8 +1120,8 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-small.jpg")'));
-				background-position: center center;
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner-new-small.jpg")'));
+				background-position: center 10%;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
