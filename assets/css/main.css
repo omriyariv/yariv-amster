@@ -354,7 +354,7 @@ button,
 }
 @media screen and (max-width: 980px) {
   .wrapper > .inner {
-    max-width: 47em;
+    max-width: 49em;
   }
 }
 
@@ -1004,7 +1004,7 @@ body.is-preload #banner:after {
   position: relative;
   display: inline-block;
   color: #ffffff;
-  top: 0.6em;
+  top: 0.7em;
   margin-right: 0.5em;
   height: 1.75em;
   width: 1.7em;

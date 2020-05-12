@@ -354,7 +354,7 @@
 			margin: 0 auto;
 
 			@include breakpoint('<=medium') {
-				max-width: 47em;
+				max-width: 49em;
 			}
 
 			// @include breakpoint('<=large') {
@@ -690,7 +690,7 @@
 			list-style: none;
 			padding: 0;
 			width: 100%;
-	
+
 			li {
 				@include vendor('transition', 'border-color 0.3s ease');
 				padding: 2em 1.5em 1.5em 1.5em;
@@ -715,7 +715,7 @@
 					margin: 0.2em;
 					width: 45%;
 				}
-	
+
 				@include icon-before('divorce');
 				@include icon-before('custody');
 				@include icon-before('inheritage');
@@ -725,7 +725,7 @@
 				@include icon-before('mediation');
 				@include icon-before('parents');
 				@include icon-before('paternity');
-	
+
 				&:before {
 					content: '';
 					color: _palette(primary);
@@ -770,7 +770,7 @@
 
 	#three {
 		background: #F9F9F9;
-		
+
 		.spotlight {
 			@include vendor('align-items', 'flex-start');
 			@include vendor('display', 'flex');
@@ -786,7 +786,7 @@
 				font-size: 10.5pt;
 				// padding: 0 2em;
 			}
-	
+
 			.image {
 				@include vendor('order', '1');
 				border-radius: 0;
@@ -801,13 +801,13 @@
 					padding: 0 0 1em 0;
 					width: 100%;
 				}
-	
+
 				img {
 					border-radius: 8px;
 					width: 100%;
 				}
 			}
-	
+
 			.content {
 				padding: 0;
 				@include vendor('order', '2');
@@ -818,7 +818,7 @@
 					width: 100%;
 				}
 			}
-	
+
 			h2 {
 				color: _palette(primary);
 				font-size: 2.25em;
@@ -835,7 +835,7 @@
 					font-size: 2em;
 					width: 100%;
 				}
-	
+
 				&:before {
 					content: '';
 					background: _palette(secondary);
@@ -844,7 +844,7 @@
 					height: 3px;
 				}
 			}
-	
+
 			p {
 				color: #282828;
 				font-size: 1.25em;
@@ -862,18 +862,18 @@
 				&:nth-child(1) {
 					@include vendor('flex-direction', 'row-reverse');
 				}
-		
+
 				&:nth-child(2) {
 					.image {
 						padding: 0 0 0 3.5em;
-	
+
 						@include breakpoint('<=medium') {
 							padding-left: 1.5em;
 						}
 					}
 				}
 			}
-	
+
 
 		}
 	}
@@ -888,7 +888,7 @@
 			@include breakpoint('<=small') {
 				@include vendor('flex-direction', 'column');
 			}
-			
+
 			.contact {
 				width: 50%;
 
@@ -898,7 +898,7 @@
 					line-height: 2.2em;
 					position: relative;
 					top: 0.2em;
-					
+
 					&:before {
 						content: '';
 						background: #FFFFFF;
@@ -952,7 +952,7 @@
 							position: relative;
 							display: inline-block;
 							color: #ffffff;
-							top: 0.6em;
+							top: 0.7em;
 							margin-right: 0.5em;
 							height: 1.75em;
 							width: 1.7em;
@@ -1006,7 +1006,7 @@
 /* CTA */
 
 	#cta {
-		
+
 		padding: 6em 0;
 
 		.inner {
